@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #357ABD; /* Darker shade on hover */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.portfolio-container {
+    padding-top: 102px; /* Ensure there's space for the header, match this height to your header */
+    max-width: 800px;   /* Optional: limit width for better readability */
+    margin: 0 auto;     /* Center the container */
+    text-align: left;   /* Align text to the left for readability */
+}

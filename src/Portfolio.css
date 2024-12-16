@@ -1,0 +1,94 @@
+.portfolio-container {
+    max-width: 800px;             /* Limit the width for better readability */
+    margin: 0 auto;               /* Center the container */
+    text-align: center;           /* Center text alignment */
+    padding: 20px;                /* Internal padding */
+    padding-top: 102px;           /* Padding to avoid overlap with fixed header */
+}
+
+.header {
+    margin-bottom: 20px;          /* Space below header */
+}
+
+.overlap-group {
+    position: relative;            /* Keep this relative for component positioning */
+    margin-bottom: 20px;          /* Space below overlap group */
+}
+
+.line {
+    width: 100%;                  /* Full width line */
+    height: 1px;                  /* Line height */
+    background-color: #000;       /* Line color */
+    margin: 10px 0;               /* Vertical margins */
+}
+
+/* Header text styles */
+.header-text {
+    color: #000000;               /* Text color for visibility */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background behind text */
+    padding: 5px 10px;            /* Padding around the text */
+    border-radius: 5px;           /* Rounded corners */
+    margin: 5px;                  /* Margin around each item */
+    display: inline-block;         /* Keep links horizontal */
+    font-family: "Helvetica-LightOblique", Helvetica;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.creative-writing {
+    font-size: 16px;               /* Font size for the paragraph */
+    margin-top: 20px;              /* Spacing above the paragraph */
+    line-height: 1.5;              /* Increase line height for readability */
+    font-family: "Helvetica-LightOblique", Helvetica;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.portfolio-work-in {
+    font-size: 20px;               /* Larger font size for emphasis */
+    margin: 20px 0;                /* Margins for spacing */
+}
+
+.signature {
+    font-size: 14px;               /* Font size for copyright notice */
+    margin-top: 20px;              /* Space above the signature text */
+}
+
+/* Ellipse styles */
+.ellipse,
+.ellipse-2,
+.ellipse-3 {
+    width: 20px;                  /* Width for circles */
+    height: 20px;                 /* Height for circles */
+    border-radius: 50%;           /* Circular shape */
+    background: linear-gradient(
+        180deg,
+        rgb(246.7, 246.25, 246.25) 0%,
+        rgb(206.25, 206.25, 206.25) 100%
+    );
+    margin: 5px;                  /* Space between ellipses */
+    display: inline-block;         /* Display along a line */
+}
+
+.about-me-graphic {
+    margin: 20px 0;               /* Separate from the surrounding content */
+    max-width: 100%;              /* Ensure it does not overflow */
+    height: auto;                 /* Maintain aspect ratio */
+}
+
+
+.skills-box {
+    height: 455px;
+    position: relative;
+    width: 1218px;
+}   
+.skills-box .skills-container {
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    height: 160px;
+    left: 0;
+    position: absolute;
+    top: 111px;
+    width: 274px;
+  }
+

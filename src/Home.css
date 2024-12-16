@@ -1,0 +1,71 @@
+.desktop {
+    background-color: #ffffff; /* White background for simplicity */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    min-height: 100vh; /* Full height of the viewport */
+}
+
+.div {
+    max-width: 800px; /* Limit the width for better readability */
+    width: 100%; /* Full width within constraints */
+    padding: 20px; /* Padding for spacing */
+    text-align: center; /* Center text */
+}
+
+.overlap-group {
+    margin: 20px 0; /* Spacing around the overlap group */
+}
+
+.text-wrapper {
+    font-weight: 100; /* Light font weight */
+    font-style: italic; /* Italic style for flair */
+    color: #000000; /* Black text for high contrast */
+    font-size: 24px; /* Increased font size for visibility */
+    line-height: normal; /* Default line height */
+}
+
+.we-don-t-count-the {
+    margin-top: 20px; /* Space above the text */
+    color: #000000; /* Text color */
+    font-size: 16px; /* Set font size */
+    line-height: 1.5; /* Increase line height for readability */
+}
+
+.line {
+    width: 100%; /* Full width line for separation */
+    height: 1px; /* Line height */
+    background-color: #000; /* Black color for the line */
+    margin: 20px 0; /* Vertical spacing */
+}
+
+.portfolio-work-in {
+    margin: 20px 0; /* Space above and below */
+    color: #000000; /* Text color */
+    font-size: 20px; /* Larger font size for emphasis */
+}
+
+.p {
+    font-size: 14px; /* Font size for copyright notice */
+}
+
+.ellipse,
+.ellipse-2,
+.ellipse-3 {
+    width: 20px; /* Width for each circle */
+    height: 20px; /* Height for each circle */
+    border-radius: 50%; /* Circle shape */
+    background: linear-gradient(
+        180deg,
+        rgb(246.7, 246.25, 246.25) 0%,
+        rgb(206.25, 206.25, 206.25) 100%
+    );
+    margin: 5px; /* Space between ellipses */
+}
+
+.arrow-container {
+    margin-top: 20px; /* Additional space above the arrow */
+    cursor: pointer; /* Indicate that it's clickable */
+}
+

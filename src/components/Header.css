@@ -1,0 +1,79 @@
+.box1 {
+    height: 102px;
+    width: 100%; /* Use full width for responsiveness */
+    position: fixed; /* Fix the header at the top */
+    top: 0;
+    z-index: 1000; /* Ensure it stays on top */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    background-color: #d9d9d91a; /* Semi-transparent background */
+}
+
+.header {
+    height: 102px; /* Header height */
+    width: 100%; /* Take full width for responsiveness */
+}
+
+.overlap-group {
+    height: 102px; /* Overlap group height */
+    position: relative;
+    width: 100%; /* Make it responsive */
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+}
+
+.line {
+    height: 1px; /* Line height */
+    width: 100%; /* Full width line */
+    background-color: #000; /* Color for line */
+    margin-top: 10px; /* Add margin as needed */
+    padding: 10px;
+}
+
+/* Updated header-text styles */
+.header-text-web,
+.header-text-Home,
+.header-text-photog,
+.header-text-film,
+.header-text-writing {
+    position: relative; /* Relative positioning for possible adjusting */
+    font-family: "Helvetica-LightOblique", Helvetica;
+    font-size: 12px;
+    font-weight: 300;
+    color: #000000; /* Link text color changed to black */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background behind text */
+    padding: 5px 10px; /* Padding around the text for better appearance */
+    border-radius: 5px; /* Slight rounding of corners */
+    white-space: nowrap; /* Prevent wrapping for these links */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+    margin: 0 5px; /* Adjust margin to reduce spacing between links */
+}
+
+.header-text:hover {
+    background-color: rgba(255, 255, 255, 1); /* Change background on hover */
+}
+
+/* Specific classes for each link (no additional styles for now) */
+.header-text-web,
+.header-text-photog,
+.header-text-film,
+.header-text-writing {
+    /* These can have additional styles if needed */
+}
+
+.img {
+    height: 1px; /* Placeholder for a graphic if needed */
+    width: calc(100% - 162px); /* Adjust to fit if using a graphic */
+}
+
+.rectangle {
+    background-color: rgba(217, 217, 217, 0.1); /* Light background for header */
+    filter: blur(4px);
+    height: 102px; /* Set the rectangle's height */
+    position: absolute; /* Positioning behind contents */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width for responsiveness */
+}

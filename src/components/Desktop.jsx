@@ -1,14 +1,15 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
-import { WeatherApi } from './WeatherApi'; 
-import { LogoText } from './LogoText'; 
-import { ImageFetch } from './ImageFetch'; 
+import { WeatherApi } from './WeatherApi'; // Check if this points to the correct file
+import { LogoText } from './LogoText'; // Check the casing
+import { ImageFetch } from './ImageFetch'; // Ensure this path is correct
+import { Link } from 'react-router-dom';
 import '@/style-grid.css'; 
 
 export const Desktop = () => {
     const [color, setColor] = useState('#af8f7d'); // Initial color
     const colorPalette = [
-        
+        '#af8f7d',
         '#af7d87',
         '#af7d9a',
         '#af917d',
@@ -22,7 +23,6 @@ export const Desktop = () => {
         '#a58f7d',
         '#e5c0b0',
         '#d8a69f',
-        '#af8f7d',
         '#9a7d7d'
     ];
 
@@ -38,12 +38,12 @@ export const Desktop = () => {
                 <WeatherApi color={color} /> {/* Pass color as prop */}
             </div>
 
-            {/* Photography Tiles Container */}
+            {/* Photography Tiles Container (Portrait Rectangle) */}
             <div className="film-photography-container tile">
                 <ImageFetch query="shot in film camera" />
             </div>
 
-            {/* Color Tile */}
+            {/* Colorful Tile */}
             <div className="colorful-tile tile" onClick={handleClick} style={{ backgroundColor: color }}>
                 <div className="color-label" style={{ color: 'white', fontFamily: 'Helvetica', fontWeight: 'bold', fontSize: '1.5rem' }}>
                     {color} {/* Display the current color code */}
@@ -69,7 +69,7 @@ export const Desktop = () => {
                 <ImageFetch query="sunset" />
             </div>
 
-            {/* wedding Photography Container */}
+            {/* Food Photography Container */}
             <div className="wedding-photography-container tile">
                 <ImageFetch query="intimate wedding" />
             </div>
@@ -85,8 +85,10 @@ export const Desktop = () => {
             </div>
 
             {/* Arrow Container in Row 3, Column 4 */}
-            <div className="arrow-container tile" style={{ backgroundColor: color }}> 
-                <img src="/Arrow.svg" alt="Arrow" style={{ width: '81px', height: '24px' }} /> {/* Arrow icon this is the link to the portfolio*/}
+            <div className="arrow-container tile" style={{ backgroundColor: color }}>
+                <Link to="/portfolio">
+                    <img src="./public/Arrow.svg" alt="Arrow" style={{ width: '81px', height: '24px', cursor: 'pointer' }} />
+                </Link>
             </div>
         </div>
     );

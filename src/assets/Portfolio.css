@@ -1,0 +1,63 @@
+.portfolio-page {
+    padding: 20px;             /* Padding for layout */
+    max-width: 800px;         /* Maximum width for better readability */
+    margin: 0 auto;           /* Center the container */
+    text-align: left;         /* Align text to the left for clarity */
+}
+
+.header {
+    margin-bottom: 20px;      /* Space below header */
+}
+
+.overlap-group-2 {
+    position: relative;
+    margin-bottom: 20px; /* Space below header section */
+}
+
+.line {
+    height: 1px;                /* Line height */
+    width: 100%;                /* Full width line */
+    background-color: #000;     /* Color for the line */
+    margin: 10px 0;             /* Vertical margins */
+}
+
+.webdesign, .text-wrapper-5, .text-wrapper-6, .text-wrapper-7 {
+    font-family: "Helvetica-LightOblique", Helvetica;
+    font-size: 12px;            /* Font size for the specialty text */
+    font-weight: 300;           /* Light font weight */
+    color: #000000;             /* Text color for clear visibility */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 5px 10px;          /* Padding around the text */
+    border-radius: 5px;         /* Slight rounding of corners */
+    margin: 5px;                /* Margin around each item */
+    display: inline-block;       /* Treat as inline for horizontal layout */
+}
+
+.portfolio-wip {
+    font-size: 20px;            /* Larger font size for visibility */
+    margin: 20px 0;             /* Margin above and below */
+    text-align: center;         /* Center this text */
+}
+
+.p {
+    font-size: 14px;            /* Font size for copyright notice */
+    text-align: center;         /* Center the copyright text */
+}
+
+.ellipse, .ellipse-2, .ellipse-3 {
+    width: 20px;                /* Width for ellipses */
+    height: 20px;               /* Height for ellipses */
+    border-radius: 50%;         /* Circular shape */
+    background: linear-gradient(
+        180deg,
+        rgb(246.7, 246.25, 246.25) 0%,
+        rgb(206.25, 206.25, 206.25) 100%
+    );
+    margin: 5px;                /* Space between ellipses */
+    display: inline-block;       /* Align ellipses horizontally */
+}
+
+/* If you need styles for the skills-container elements, you can add them here */
+.skills-container {
+    /* Define styles if necessary */
+}

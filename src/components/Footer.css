@@ -1,0 +1,28 @@
+.footer {
+    background-color: #d9d9d91a; /* Use a similar light background as the header */
+    color: #000; /* Black text color for footer content */
+    text-align: center; /* Center text */
+    padding: 20px; /* Padding for footer */
+    position: relative; /* Allow positioning */
+    width: 100%; /* Full width */
+    bottom: 0; /* Stick to bottom when content is short */
+}
+
+.footer-content {
+    max-width: 800px; /* Limit width to match other content */
+    margin: 0 auto; /* Center the content */
+}
+
+.footer-links {
+    margin-top: 10px; /* Space above links */
+}
+
+.footer-links a {
+    color: #000; /* Link color */
+    margin: 0 10px; /* Margin between links */
+    transition: color 0.2s; /* Smooth color transition on hover */
+}
+
+.footer-links a:hover {
+    color: #4a90e2; /* Change color on hover */
+}

@@ -1,19 +1,17 @@
-// import React from 'react';
+// eslint-disable-next-line no-unused-vars
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-// Basic arrow representation using a styled div
-export const ArrowRight = () => {
+const ArrowRight = () => {
     return (
-        <div
-            style={{
-                cursor: 'pointer',
-                width: '20px',
-                height: '20px',
-                backgroundColor: 'black',
-                clipPath: 'polygon(0 0, 100% 50%, 0 100%)', 
-                marginLeft: '10px',
-            }}
-            title="Go to Portfolio"
-            onClick={() => alert("Navigate to Portfolio!")} 
-        />
+        <Link to="/portfolio" style={{ cursor: 'pointer' }}>
+            <img 
+                src="/img/arrow.svg" 
+                alt="Arrow" 
+                style={{ width: '40px', height: '40px' }} 
+            />
+        </Link>
     );
 };
+
+export default ArrowRight;

@@ -1,7 +1,7 @@
 html, body {
-    height: 100%;
     margin: 0;
-    overflow: hidden;
+    height: 100%;              /* Ensure the body takes full height */
+    overflow-y: auto;
 }
 
 .desktop {
@@ -183,4 +183,10 @@ html, body {
 
 .tile:hover {
     background-color: #d0d0d0;
+}
+
+.arrow-container img {
+    width: 81px;
+    height: 24px;
+    cursor: pointer;
 }
